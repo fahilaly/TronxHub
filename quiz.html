@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knowledge Check | TronxHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+  
+  <nav class="navbar" id="main-nav">
+    <div class="nav-container container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="ph ph-gear-six"></i></div>
+        <span data-i18n="nav_logo">TronxHub</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="components.html" data-i18n="nav_catalog">Catalog</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="quiz.html" data-i18n="nav_quiz" class="active">Quiz</a>
+        <a href="forum.html" data-i18n="nav_forum">Forum</a>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <i class="ph ph-moon"></i>
+        </button>
+        <button id="lang-toggle" class="lang-btn">
+          <i class="ph ph-translate"></i>
+          <span>عربي</span>
+        </button>
+      </div>
+      <button class="mobile-menu-btn icon-btn" id="mobile-menu-btn" aria-label="Menu">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="components.html" data-i18n="nav_catalog">Catalog</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="quiz.html" data-i18n="nav_quiz">Quiz</a>
+      <a href="forum.html" data-i18n="nav_forum">Forum</a>
+    </div>
+  </nav>
+
+  <main style="padding-top: 80px;">
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag" data-i18n="section_quiz_tag">TEST YOURSELF</span>
+          <h2 data-i18n="section_quiz_title">Quick Knowledge Check</h2>
+          <p data-i18n="section_quiz_subtitle">Test your understanding of mechatronics fundamentals.</p>
+        </div>
+
+        <div class="quiz-container glass-panel" id="quiz-container" data-reveal>
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon"><i class="ph ph-gear-six"></i></div>
+            <span data-i18n="nav_logo">TronxHub</span>
+          </div>
+          <p data-i18n="footer_desc">An open educational platform for mechatronics and robotics engineering students.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_quick_links">Quick Links</h4>
+          <a href="components.html" data-i18n="nav_catalog">Catalog</a>
+          <a href="projects.html" data-i18n="nav_projects">Projects</a>
+          <a href="quiz.html" data-i18n="nav_quiz">Quiz</a>
+          <a href="forum.html" data-i18n="nav_forum">Forum</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_resources">Resources</h4>
+          <a href="https://www.arduino.cc/" target="_blank">Arduino Docs</a>
+          <a href="https://docs.espressif.com/" target="_blank">ESP-IDF Docs</a>
+          <a href="https://www.raspberrypi.com/documentation/" target="_blank">Raspberry Pi</a>
+          <a href="https://ros.org/" target="_blank">ROS Wiki</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> TronxHub — <span data-i18n="footer_tagline">Built for Engineers, by Engineers.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>

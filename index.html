@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TronxHub | Mechatronics Engineering Platform</title>
+  <meta name="description" content="A comprehensive bilingual educational platform for mechatronics engineering — sensors, actuators, microcontrollers, and robotics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+</head>
+<body>
+  
+  <!-- Navigation -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-container container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="ph ph-gear-six"></i></div>
+        <span data-i18n="nav_logo">TronxHub</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="components.html" data-i18n="nav_catalog">Catalog</a>
+        <a href="projects.html" data-i18n="nav_projects">Projects</a>
+        <a href="quiz.html" data-i18n="nav_quiz">Quiz</a>
+        <a href="forum.html" data-i18n="nav_forum">Forum</a>
+      </div>
+      <div class="nav-controls">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+          <i class="ph ph-moon"></i>
+        </button>
+        <button id="lang-toggle" class="lang-btn">
+          <i class="ph ph-translate"></i>
+          <span>عربي</span>
+        </button>
+      </div>
+      <button class="mobile-menu-btn icon-btn" id="mobile-menu-btn" aria-label="Menu">
+        <i class="ph ph-list"></i>
+      </button>
+    </div>
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <a href="components.html" data-i18n="nav_catalog">Catalog</a>
+      <a href="projects.html" data-i18n="nav_projects">Projects</a>
+      <a href="quiz.html" data-i18n="nav_quiz">Quiz</a>
+      <a href="forum.html" data-i18n="nav_forum">Forum</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-grid-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text" data-reveal>
+          <div class="badge">
+            <i class="ph ph-circuit-board"></i>
+            <span data-i18n="hero_badge">Mechatronics Engineering</span>
+          </div>
+          <h1 data-i18n="hero_title">Learn. Build. Automate.</h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">A hands-on technical platform for understanding sensors, actuators, microcontrollers, and robotic systems.</p>
+          <div class="hero-actions">
+            <a href="components.html" class="btn btn-primary">
+              <i class="ph ph-book-open-text"></i>
+              <span data-i18n="hero_cta_primary">Explore Components</span>
+            </a>
+            <a href="quiz.html" class="btn btn-outline">
+              <i class="ph ph-exam"></i>
+              <span data-i18n="hero_cta_secondary">Test Your Knowledge</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator">
+        <i class="ph ph-caret-double-down"></i>
+      </div>
+    </section>
+
+    <!-- Stats Strip -->
+    <section class="stats-strip">
+      <div class="container stats-grid">
+        <div class="stat-item" data-reveal>
+          <div class="stat-icon"><i class="ph ph-cpu"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-count="15">0</span>
+            <span class="stat-label" data-i18n="stat_components">Components</span>
+          </div>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-icon"><i class="ph ph-wrench"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label" data-i18n="stat_projects">Projects</span>
+          </div>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-icon"><i class="ph ph-question"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-count="30">0</span>
+            <span class="stat-label" data-i18n="stat_questions">Quiz Questions</span>
+          </div>
+        </div>
+        <div class="stat-item" data-reveal>
+          <div class="stat-icon"><i class="ph ph-users-three"></i></div>
+          <div class="stat-info">
+            <span class="stat-number" data-count="150">0</span>
+            <span class="stat-label" data-i18n="stat_members">Members</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Network / Clubs -->
+    <section id="network" class="section">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag" data-i18n="section_community_tag">OUR NETWORK</span>
+          <h2 data-i18n="nav_dashboard_title">Dashboard & Clubs</h2>
+          <p data-i18n="nav_dashboard_desc">Explore specialized platforms in the Mechatronics Club network.</p>
+        </div>
+        <div class="split-section">
+          <div class="feature-card glass-panel" data-reveal>
+            <div class="feature-card-header">
+              <div class="feature-icon"><i class="ph ph-buildings"></i></div>
+              <h3 data-i18n="card_mechmanager_title">MechManager</h3>
+            </div>
+            <p data-i18n="card_mechmanager_desc">Access the main mechatronics management dashboard for club administrators.</p>
+            <div class="feature-card-footer">
+              <a href="https://mechmanager-8c4q5hyb.manus.space/dashboard" target="_blank" class="btn btn-outline" style="width:100%; border-radius:6px;">
+                <span data-i18n="btn_open_dashboard">Open Dashboard</span> <i class="ph ph-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="feature-card glass-panel" data-reveal>
+            <div class="feature-card-header">
+              <div class="feature-icon"><i class="ph ph-rocket"></i></div>
+              <h3 data-i18n="card_mechatronix_title">Mechatronix</h3>
+            </div>
+            <p data-i18n="card_mechatronix_desc">Visit the Mechatronix hub for club events and organizational details.</p>
+            <div class="feature-card-footer">
+              <a href="https://mechatronix-imab83dm.manus.space/" target="_blank" class="btn btn-outline" style="width:100%; border-radius:6px;">
+                <span data-i18n="btn_visit_mechatronix">Visit Mechatronix</span> <i class="ph ph-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forum & Assistant -->
+    <section id="forum" class="section section-alt">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <span class="section-tag" data-i18n="section_community_tag">COMMUNITY & TOOLS</span>
+          <h2 data-i18n="section_community_title">Connect & Learn</h2>
+        </div>
+        <div class="split-section">
+          <div class="feature-card glass-panel" data-reveal>
+            <div class="feature-card-header">
+              <div class="feature-icon"><i class="ph ph-robot"></i></div>
+              <h3 data-i18n="card_assistant_title">TronxBot</h3>
+            </div>
+            <p data-i18n="card_assistant_desc">Ask technical questions about wiring diagrams, communication protocols, and control system logic.</p>
+            <div class="feature-card-footer">
+              <button class="btn btn-primary" id="open-assistant-btn">
+                <i class="ph ph-chat-text"></i>
+                <span data-i18n="btn_open_assistant">Open TronxBot</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="feature-card glass-panel" data-reveal>
+            <div class="feature-card-header">
+              <div class="feature-icon"><i class="ph ph-users"></i></div>
+              <h3 data-i18n="card_forum_title">Community Forum</h3>
+            </div>
+            <p data-i18n="card_forum_desc">Share projects, discuss circuit designs, and debug code with fellow engineering students.</p>
+            <div class="feature-card-footer" style="padding-top:1rem;">
+               <a href="forum.html" class="btn btn-outline" style="width:100%; border-radius:6px;">
+                <i class="ph ph-arrow-right"></i>
+                <span data-i18n="btn_visit_forum">Visit Forum</span>
+               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon"><i class="ph ph-gear-six"></i></div>
+            <span data-i18n="nav_logo">TronxHub</span>
+          </div>
+          <p data-i18n="footer_desc">An open educational platform for mechatronics and robotics engineering students.</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_quick_links">Quick Links</h4>
+          <a href="components.html" data-i18n="nav_catalog">Catalog</a>
+          <a href="projects.html" data-i18n="nav_projects">Projects</a>
+          <a href="quiz.html" data-i18n="nav_quiz">Quiz</a>
+          <a href="forum.html" data-i18n="nav_forum">Forum</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_resources">Resources</h4>
+          <a href="https://www.arduino.cc/" target="_blank">Arduino Docs</a>
+          <a href="https://docs.espressif.com/" target="_blank">ESP-IDF Docs</a>
+          <a href="https://www.raspberrypi.com/documentation/" target="_blank">Raspberry Pi</a>
+          <a href="https://ros.org/" target="_blank">ROS Wiki</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> TronxHub — <span data-i18n="footer_tagline">Built for Engineers, by Engineers.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Assistant Modal -->
+  <div id="assistant-modal" class="modal">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content glass-panel" style="max-width:500px;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="feature-icon small"><i class="ph ph-robot"></i></div>
+          <h3 data-i18n="assistant_modal_title">TronxBot</h3>
+        </div>
+        <button class="icon-btn close-btn" id="close-assistant-btn"><i class="ph ph-x"></i></button>
+      </div>
+      <div class="modal-body" id="chat-history" style="height: 350px;">
+        <div class="chat-message bot">
+          <div class="avatar"><i class="ph ph-robot"></i></div>
+          <div class="msg-bubble" data-i18n="assistant_welcome">Hello Engineer! Ask me anything about sensors, motors, wiring, or microcontrollers.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="text" id="chat-input" data-i18n="assistant_placeholder" data-i18n-prop="placeholder" placeholder="Ask about wiring, code, or physics..." />
+        <button class="btn btn-primary send-btn" id="send-chat-btn"><i class="ph ph-paper-plane-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
