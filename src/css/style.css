@@ -246,9 +246,9 @@ a { color: inherit; text-decoration: none; }
 .hero-grid-overlay {
   position: absolute; inset: 0; z-index: -1;
   background: var(--bg-primary);
-  opacity: 0.88;
+  opacity: 0.65;
 }
-[data-theme="dark"] .hero-grid-overlay { opacity: 0.92; }
+[data-theme="dark"] .hero-grid-overlay { opacity: 0.8; }
 
 .hero-content { display: flex; justify-content: center; width: 100%; }
 

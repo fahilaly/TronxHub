@@ -163,6 +163,23 @@ export const dict = {
     proj_irrigation_desc: "Automated plant watering system using soil moisture sensors and a relay-controlled water pump.",
     proj_irrigation_steps: "1. Stick moisture sensor in soil\n2. Wire relay to water pump\n3. Read moisture level\n4. Trigger pump when dry",
 
+    // New Projects
+    proj_lighting_title: "Smart Street Lighting",
+    proj_lighting_desc: "An energy-saving system that automatically toggles street lights based on ambient light levels.",
+    proj_lighting_steps: "1. Connect LDR sensor\n2. Integrate Relay module\n3. Code threshold logic\n4. Test with AC/DC lamp",
+    proj_solar_title: "Dual-Axis Solar Tracker",
+    proj_solar_tracker_desc: "A motorized solar panel mount that rotates to follow the sun's trajectory for maximum energy efficiency.",
+    proj_solar_steps: "1. Mount 4 LDRs in a cross\n2. Use 2 servos for X/Y axes\n3. Logic: Compare LDR values\n4. Rotate servos to balance light",
+    proj_sanitizer_title: "Touchless Hand Sanitizer",
+    proj_sanitizer_desc: "A COVID-19 safety build that dispenses sanitizer automatically using IR proximity detection.",
+    proj_sanitizer_steps: "1. Setup IR proximity sensor\n2. Connect mini water pump\n3. Use transistor or relay\n4. Trigger pump for 1 second",
+    proj_voice_title: "Voice Controlled Home",
+    proj_voice_desc: "Control appliances using Bluetooth and voice commands via a custom mobile app.",
+    proj_voice_steps: "1. Pair HC-05 with phone\n2. Setup Relay board\n3. Use Serial.readString()\n4. Trigger relays on keyword",
+    proj_scale_title: "Precision Digital Scale",
+    proj_scale_desc: "High-accuracy weighing system using a load cell and HX711 amplifier module.",
+    proj_scale_steps: "1. Calibrate load cell\n2. Connect to HX711\n3. Display on 16x2 LCD\n4. Tara function via button",
+
     // Quiz questions
     quiz_title: "Advanced Mechatronics Quiz",
     q1: "Which protocol is primarily used by the MPU6050, and what is its standard default 7-bit address?",
@@ -347,6 +364,23 @@ export const dict = {
     proj_irrigation_title: "نظام الري الذكي",
     proj_irrigation_desc: "نظام آلي لري النباتات باستخدام حساس رطوبة التربة ومضخة مياه يتحكم بها ريلاي.",
     proj_irrigation_steps: "1. وضع الحساس في التربة\n2. توصيل الريلاي بالمضخة\n3. قراءة مستوى الرطوبة\n4. تشغيل المضخة عند الجفاف",
+
+    // New Projects
+    proj_lighting_title: "إضاءة الشوارع الذكية",
+    proj_lighting_desc: "نظام موفر للطاقة يقوم بتشغيل وإطفاء إنارة الشوارع تلقائياً بناءً على مستوى الإضاءة المحيطة.",
+    proj_lighting_steps: "1. توصيل حساس LDR\n2. دمج وحدة الريلاي\n3. برمجة منطق العتبة\n4. التجربة مع مصباح AC/DC",
+    proj_solar_title: "متتبع شمسي ثنائي المحاور",
+    proj_solar_tracker_desc: "قاعدة لوح شمسي بمحركات تدور لتتبع مسار الشمس للحصول على أقصى كفاءة طاقة.",
+    proj_solar_steps: "1. تثبيت 4 حساسات LDR\n2. استخدام محركي سيرفو للمحاور\n3. منطق: مقارنة قيم الحساسات\n4. تدوير السيرفوهات لموازنة الضوء",
+    proj_sanitizer_title: "معقم يدين بدون تلامس",
+    proj_sanitizer_desc: "جهاز سلامة يوزع المعقم تلقائياً باستخدام الكشف عن القرب بالأشعة تحت الحمراء.",
+    proj_sanitizer_steps: "1. إعداد حساس القرب IR\n2. توصيل مضخة مياه صغيرة\n3. استخدام ترانزستور أو ريلاي\n4. تشغيل المضخة لمدة ثانية واحدة",
+    proj_voice_title: "التحكم المنزلي الصوتي",
+    proj_voice_desc: "التحكم في الأجهزة المنزلية باستخدام البلوتوث والأوامر الصوتية عبر تطبيق هاتف.",
+    proj_voice_steps: "1. اقتران HC-05 بالهاتف\n2. إعداد لوحة الريلاي\n3. استخدام Serial.readString\n4. تفعيل الريلاي عند كلمة مفتاحية",
+    proj_scale_title: "ميزان رقمي دقيق",
+    proj_scale_desc: "نظام وزن عالي الدقة باستخدام خلية تحميل (Load Cell) وموحد HX711.",
+    proj_scale_steps: "1. معايرة خلية التحميل\n2. التوصيل بمحول HX711\n3. العرض على شاشة 16x2 LCD\n4. وظيفة التصفير عبر زر",
 
     // Quiz
     quiz_title: "اختبار الميكاترونكس المتقدم",
