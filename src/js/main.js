@@ -92,45 +92,45 @@ const components = [
 const projects = [
   { titleKey:'proj_line_title', descKey:'proj_line_desc', stepsKey: 'proj_line_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/UwcJJFWXTgMirSUB.png',
-    tags:['Arduino','IR Sensor','PID'], price:'$45', video:'https://www.youtube.com/embed/S0y1C-Yid-0', 
+    tags:['Arduino','IR Sensor','PID'], price:'$45', 
     requirements:'Arduino Uno, L298N, 2x DC Motors, 2x IR Sensors, Chassis, Battery' },
   { titleKey:'proj_obstacle_title', descKey:'proj_obstacle_desc', stepsKey: 'proj_obstacle_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/WkRQZKTtwJWdpBIo.png',
-    tags:['Arduino','HC-SR04','Servo'], price:'$50', video:'https://www.youtube.com/embed/qM-V_oB-x_E', 
+    tags:['Arduino','HC-SR04','Servo'], price:'$50', 
     requirements:'Arduino Uno, HC-SR04, Servo, L298N, 2x DC Motors' },
   { titleKey:'proj_irrigation_title', descKey:'proj_irrigation_desc', stepsKey: 'proj_irrigation_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/UFvdqRaxikWSCcEf.png',
-    tags:['Arduino','Relay','Moisture'], price:'$30', video:'https://www.youtube.com/embed/Xh0lDndS1iU', 
+    tags:['Arduino','Relay','Moisture'], price:'$30', 
     requirements:'Arduino, Relay Module, Soil Moisture Sensor, DC Water Pump' },
   { titleKey:'proj_weather_title', descKey:'proj_weather_desc', stepsKey: 'proj_weather_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/UASOgzzcsJBECqeP.png',
-    tags:['ESP32','DHT22','IoT'], price:'$25', video:'https://www.youtube.com/embed/4fW16HlB7o8', 
+    tags:['ESP32','DHT22','IoT'], price:'$25', 
     requirements:'ESP32, DHT22, Jumper Wires, Breadboard' },
   { titleKey:'proj_arm_title', descKey:'proj_arm_desc', stepsKey: 'proj_arm_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/TkxszgCtwiuCVTjA.png',
-    tags:['Arduino','Servo','Joystick'], price:'$60', video:'https://www.youtube.com/embed/9_C8D9S1XU4', 
+    tags:['Arduino','Servo','Joystick'], price:'$60', 
     requirements:'Arduino Uno, 3x SG90 Servos, 2x Joysticks' },
   
   // Additional Projects from Reference
   { titleKey:'proj_lighting_title', descKey:'proj_lighting_desc', stepsKey: 'proj_lighting_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/nWgsNBSiGjkSrqgt.png', 
-    tags:['Relay','LDR','Arduino'], price:'$20', video:'https://www.youtube.com/embed/dQw4w9WgXcQ', 
+    tags:['Relay','LDR','Arduino'], price:'$20', 
     requirements:'Arduino, Relay, LDR, Resistor, Breadboard' },
   { titleKey:'proj_solar_title', descKey:'proj_solar_tracker_desc', stepsKey: 'proj_solar_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/oaXXdQcLABvTgLwY.png',
-    tags:['Solar','Servo','LDR'], price:'$40', video:'https://www.youtube.com/embed/dQw4w9WgXcQ', 
+    tags:['Solar','Servo','LDR'], price:'$40', 
     requirements:'Arduino, 2x Servos, 4x LDRs, Solar Panel' },
   { titleKey:'proj_sanitizer_title', descKey:'proj_sanitizer_desc', stepsKey: 'proj_sanitizer_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/tGQkzxpzYTASZdqY.png',
-    tags:['IR','Pump','Relay'], price:'$15', video:'https://www.youtube.com/embed/dQw4w9WgXcQ', 
+    tags:['IR','Pump','Relay'], price:'$15', 
     requirements:'IR Proximity, Mini Pump, Relay/Transistor' },
   { titleKey:'proj_voice_title', descKey:'proj_voice_desc', stepsKey: 'proj_voice_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/CkGLzzIMbiAoLglK.png',
-    tags:['BT','Voice','Relay'], price:'$35', video:'https://www.youtube.com/embed/dQw4w9WgXcQ', 
+    tags:['BT','Voice','Relay'], price:'$35', 
     requirements:'Arduino, HC-05, Relay Module, Phone App' },
   { titleKey:'proj_scale_title', descKey:'proj_scale_desc', stepsKey: 'proj_scale_steps',
     img:'https://files.manuscdn.com/user_upload_by_module/session_file/310519663319989084/vaOlUEjhItwMaCqv.png',
-    tags:['Load Cell','HX711','LCD'], price:'$25', video:'https://www.youtube.com/embed/dQw4w9WgXcQ', 
+    tags:['Load Cell','HX711','LCD'], price:'$25', 
     requirements:'Load Cell, HX711, Arduino, I2C LCD' },
 ];
 
@@ -395,6 +395,10 @@ function openDetailModal(comp) {
           <span class="detail-spec-label">${getCurrentLang() === 'ar' ? 'البروتوكول' : 'Protocol'}</span>
           <span class="detail-spec-value">${comp.protocol}</span>
         </div>
+        <div class="detail-spec-row" style="flex-direction: column; align-items: flex-start; gap: 0.5rem; border-bottom: none; margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--border-light);">
+          <span class="detail-spec-label">${getCurrentLang() === 'ar' ? 'الاستخدامات الشائعة' : 'Common Uses'}</span>
+          <span class="detail-spec-value" style="font-weight: 400; color: var(--text-secondary); line-height: 1.6;">${t('comp_' + comp.id + '_use')}</span>
+        </div>
       </div>
     </div>
   `;
@@ -449,11 +453,6 @@ function renderProjects() {
         <div class="project-tags" style="margin-top: 1rem;">
           ${p.tags.map(tag => `<span class="project-tag-chip">${tag}</span>`).join('')}
         </div>
-      </div>
-      <div class="project-footer" style="padding: 1rem; background: var(--glass-bg); text-align:center;">
-        <a href="${p.video}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width:100%; border-radius: 6px;">
-          <i class="ph ph-youtube-logo" style="color:#ff0000; font-size:1.2rem;"></i> ${t('proj_video')}
-        </a>
       </div>
     `;
     container.appendChild(card);
